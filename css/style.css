@@ -288,4 +288,7 @@ ul li a:hover{
         justify-content: center;
         
     }
+    footer{
+        width: 100%;
+    }
 }
