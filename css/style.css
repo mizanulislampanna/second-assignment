@@ -1,0 +1,295 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+}
+
+/*=================
+    Common Styles
+==================== */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.primary{
+    color:#ffff;
+    background-color: #E02C6D ;
+}
+/*===================
+    Navigation Style
+=================== */
+
+.navigation{
+    margin: 50px;
+    width: 1200px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.site-title{
+    font-size: 24px;
+    font-weight: 700;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin: 10px;
+}
+ul li a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600px;
+    color: black;
+}
+.nav-icon{
+    font-size: 24px;
+}
+/*=================
+    banner section 
+==================== */
+.header-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.left-header{
+    width: 582px;
+    height: 270px;
+}
+.header-title{
+    font-size: 52px;
+    margin-bottom: 16px;
+}
+.left-header p{
+    margin-bottom: 16px;
+}
+.right-header{
+    margin-left: 133px;
+    width:475px;
+    height: 475px;
+    padding: 30px 33px 31px 2px;
+    text-align: center;
+    background-image: url("../images/circle-design.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 400px ;
+}
+.right-header img{
+    width: 80%;
+}
+.prebook-button{
+    text-decoration: none;
+    padding:10px 24px 10px 24px;
+    border-radius: 30px;
+    display: inline-block;
+    cursor: pointer;
+}   
+.logos{
+    width: 1080px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(119, 136, 153, 0.267);
+    border-bottom: 1px solid rgba(119, 136, 153, 0.424);
+    border-radius: 10px;
+}
+.logo{
+    padding: 10px;
+}
+/*-======================
+     popular collection
+========================= */
+.collection-heading{
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.product{
+    width: 330px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.thumbnail{
+    text-align: center;
+    overflow: hidden;
+}
+.thumbnail img{
+    width:100%;
+}
+.product-name{
+    font-size: 28px;
+}
+.price{
+    font-size: 24px;
+}
+.fa-star.filled{
+    color: #FB8200;
+}
+.fa-star.empty{
+    color: #9e9e9e;
+}
+.sidelink{
+    margin-top: 30px;
+    width: 1080px;
+    display: flex;
+    justify-content:flex-end
+}
+.see-more a{
+    text-decoration: none;
+    color: #E02C6D ;
+}
+
+/*===================
+ footer Section
+==================== */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+    background-color: #0A0826;
+}
+.footer-content{
+    color: #ffff;
+    text-align: center;
+}
+.footer-heading{
+    font-size: 24px;
+}
+.footer-text-2{
+ margin-top: 10px;
+}
+.footer-icons{
+    margin-top: 15px;
+}
+.footer-icons  a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    background-color: rgba(63, 58, 58, 0.329);
+    border-radius: 45%;
+}
+
+/*==================
+ animation
+======================== */
+.product:hover{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.6);
+    transition: 0.2s;
+}
+
+.product:hover .photo{
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+.prebook-button:hover {
+    background-color: #800633;
+}
+ul li a:hover{
+    border-radius: 5px;
+    background-color: rgb(0 0 0 / 0.2);
+}
+
+/*================================
+ Midia quarrey For Mobile devices
+=================================== */
+@media (max-width:688px) {
+    .container{
+        display: flex;
+        align-items: center;
+    }
+    .navigation{
+        width: 450px;
+        padding-left: 40px;
+    }
+    .toggle{
+        display: block;
+    }
+    ul li a{
+        display: none;
+    }
+    .collections{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        width: fit-content;
+    }
+    .left-header{
+        order: 1;
+        width: 200px;
+        height: 200px;
+        background-size: auto;
+    }
+    .header-title{
+        font-size: 30px;
+    }
+    .right-header{
+        margin-left: 0;
+        width: 300px;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+    .right-header img{
+        width: 100%;
+    }
+    .header-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logos {
+        visibility: hidden
+    }
+    
+}
+/*================================
+ Midia quarrey For Tablets devices
+=================================== */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+
+    .navigation {
+        width: 800px;
+    }
+    .header-content{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .left-header{
+        order: 1;
+    }
+    .collections{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        
+    }
+}
