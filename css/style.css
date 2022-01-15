@@ -283,6 +283,9 @@ ul li a:hover{
     .left-header{
         order: 1;
     }
+    .logos{
+        width: 600px;
+    }
     .collections{
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
